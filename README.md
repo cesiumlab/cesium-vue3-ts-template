@@ -8,7 +8,7 @@
 ### 特点
 
 
-建议使用JS开发Cesium项目的同学，可以尝试使用此模板(Typescript)来开发。
+建议使用JS开发Cesium项目的同学，可以尝试使用此模板(Typescript)来开发。该模板中ts和js可以混合使用。  
 1. 使用Cesium API时，会有比较好的代码提示  
 
 ![](mk-images/2021-03-10-11-21-06.png)
@@ -18,6 +18,9 @@
 2. Typescript可以帮助提前解决语法错误，提高开发效率  
 
 3. Vue组件的使用请参考 https://github.com/vuejs/vue-class-component
+
+4. 此项目亦可写入js代码，但是如果该js文件需要被其他ts文件引用，需要编写相应的d.ts声明文件，可查看testjs文件夹中的示例代码
+注意：只有需要被ts引用的js文件才需要编写d.ts声明文件。也就是说，对于不暴露接口的js文件，直接使用即可。
 
 ### 项目安装
 ```
